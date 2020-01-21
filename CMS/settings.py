@@ -25,7 +25,7 @@ SECRET_KEY = 'u1!s&iqexp76@dg2wtf_5b--w0b9nsd$e63w-l!*e@^y@h6o#+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://18.224.25.115:8000','qsinsights.com', 'www.qsinsights']
 
 
 # Application definition
@@ -117,5 +117,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+import os.path
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join('static'),)

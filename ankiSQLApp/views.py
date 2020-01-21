@@ -12,11 +12,11 @@ def home(request):
             form.save()
             all_items = ankidb.objects.all()
             messages.success(request, ('New item added..'))
-            return render(request, 'index.html', {'all_items':all_items})
+            return render(request, 'UDS.html', {'all_items':all_items})
 
     else:
         all_items = ankidb.objects.all()
-        return render(request, 'index.html', {'all_items':all_items})
+        return render(request, 'UDS.html', {'all_items':all_items})
 
 def delete(request, list_id):
 
@@ -42,3 +42,6 @@ def Objective5 (request):
 
 def DBFO (request):
         return render(request, 'DBFO.html')
+
+def CMS (request):
+            return render(request, 'index.html')

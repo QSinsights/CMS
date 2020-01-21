@@ -2,7 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.CMS, name='CMS'),
+    path('StorageObjectives', views.home, name='home'),
     path('delete/<list_id>', views.delete, name='delete'),
     path('Objective1/', views.Objective1, name='Objective1'),
     path('Objective2/', views.Objective2, name='Objective2'),
